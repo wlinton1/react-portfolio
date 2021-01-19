@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+.App {
+  text-align: center;
+}
+
+:root {
+  --primary-white: #fff;
+  --primary-purple: #6f42c1;
+  --primary-dark: rgba(255, 255, 255, 0)
+}
+
+body {
+  font-family: "Roboto Condensed" sans-serif;
+}
+
+nav {
+  z-index: 2;
+}
+
+.navbar-brand {
+  color: var(--primary-white) !important;
+}
+
+.nav-link {
+  letter-spacing: .04 rem;
+  cursor: pointer;
+}
+
+nav ul li {
+  text-transform: uppercase;
+}
+
+.navbar-nav>li>a {
+  margin-right: .75rem;
+  margin-left: .75rem;
+  color: var(--primary-white) !important;
+  border-bottom: .19rem solid var(--primary-dark);
+}
+
+.navbar-nav>li>a.active, .navbar-nav>li>a.active:focus {
+  border-bottom: .19rem solid var(--primary-purple);
+}
+
+.navbar-nav>li>a:hover {
+  border-bottom: .19rem solid var(--primary-purple);
+}
+
+.header-wrapper {
+  position: relative;
+  background: url(portfolio.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+
+.main-info {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Roboto Condensed" sans-serif;
+  z-index: 1;
+}
+
+.main-info h1 {
+  color: var(--primary-white);
+  text-transform: uppercase;
+}
+
+.typed-text {
+  font-size: 2rem;
+  color: var(--primary-white)
+}
+
+.btn-main-offer {
+  border: 1px solid var(--primary-purple);
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: .625rem .75rem .75rem .75rem;
+  color: var(--primary-white);
+  margin: 2rem;
+}
+
+.btn-main-offer:hover {
+  text-decoration: none;
+  background-color: #6f42c1;
+  color: var(--primary-white);
+}
+
+.tsparticles-canvas-el {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+}
