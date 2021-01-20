@@ -6,11 +6,14 @@
 :root {
   --primary-white: #fff;
   --primary-purple: #6f42c1;
-  --primary-dark: rgba(255, 255, 255, 0)
+  --primary-dark: rgba(255, 255, 255, 0);
+  --primary-grey: #4b4646;
+  --primary-black: #000000;
 }
 
 body {
-  font-family: "Roboto Condensed" sans-serif;
+  font-family: "Roboto Condensed" sans-serif !important;
+  background-color: rgb(60, 60, 61) !important;
 }
 
 nav {
@@ -98,4 +101,89 @@ nav ul li {
   height: 100vh;
   width: 100vw;
   z-index: 1;
+}
+
+.about-heading {
+  font-weight: 350;
+  color: var(--primary-purple);
+  text-transform: uppercase;
+}
+
+.about-text {
+  color: var(--primary-white);
+}
+
+.photo-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-img {
+  width: 16rem;
+  border-radius: 50%;
+  padding: .3rem;
+  border: 1px solid var(--primary-purple);
+}
+
+@medie(max-width: 468px) {
+  .profile-img {
+    width: 10rem;
+  }
+}
+
+.portfolio-wrapper {
+  background: var(--primary-grey);
+  padding: 3rem 0;
+}
+
+.portfolio-wrapper h1 {
+  font-weight: 350;
+  color: var(--primary-purple);
+}
+
+.portfolio-image {
+  width: 15rem;
+  border: 1px solid var(--primary-purple);
+  padding: .25rem .25rem;
+}
+
+.portfolio-image-box {
+  position: relative;
+  margin: 1rem;
+}
+
+.overflow {
+  position: absolute;
+  opacity: 0;
+  background: var(--primary-black);
+  width: 15rem;
+  height: 8rem;
+  top: 0;
+  border: 1px solid var(--primary-purple);
+  cursor: pointer;
+}
+
+.portfolio-image-box:hover .overflow {
+  opacity: 50%;
+}
+
+.portfolio-image-popupbox {
+  width: 45rem;
+  padding: 0 0.5rem;
+}
+
+.hyper-link {
+  cursor: pointer;
+  color: var(--primary-black);
+}
+
+.hyper-link:hover {
+  color: var(--primary-purple);
+}
+
+@media(max-width: 768px) {
+  .portfolio-image-popupbox {
+    width: 100%;
+  }
 }
