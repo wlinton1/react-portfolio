@@ -9,6 +9,7 @@
   --primary-dark: rgba(255, 255, 255, 0);
   --primary-grey: #4b4646;
   --primary-black: #000000;
+  --primary-green: green;
 }
 
 body {
@@ -126,7 +127,7 @@ nav ul li {
   border: 1px solid var(--primary-purple);
 }
 
-@medie(max-width: 468px) {
+@media(max-width: 468px) {
   .profile-img {
     width: 10rem;
   }
@@ -185,5 +186,100 @@ nav ul li {
 @media(max-width: 768px) {
   .portfolio-image-popupbox {
     width: 100%;
+  }
+}
+
+.contactMe {
+  background: var(--primary-dark);
+  padding: 3rem 0;
+}
+
+.contactMe h1 {
+  font-weight: 350;
+  color: var(--primary-purple);
+  padding: 1.3rem 0;
+  text-transform: uppercase;
+}
+
+.contactMe p {
+  color: var(--primary-white);
+  font-size: 1.2rem;
+}
+
+.contactMe input, .contactMe textarea {
+  width: 100%;
+  box-sizing: border-box;
+  background: none;
+  resize: none;
+  border: 0;
+  border-bottom: .125rem solid var(--primary-grey);
+  border-radius: 0;
+  color: var(--primary-purple) !important;
+  outline: 0 !important;
+  box-shadow: none !important;
+  margin-bottom: 1rem;
+}
+
+.contactMe .container {
+  padding: 4rem 0;
+}
+
+.contactMe input:focus, .contactMe textarea:focus {
+  background: transparent;
+  color: var(--primary-purple);
+  border-bottom: .125rem solid var(--primary-grey);
+}
+
+.contactMe textarea {
+  height: 12.2rem !important;
+}
+
+.contact-btn {
+  margin: 1rem 0 0 0;
+  width: 100%;
+  background: none;
+}
+
+.line {
+  position: relative;
+  top: -.8rem;
+  width: 0;
+  height: .125rem;
+  background: var(--primary-purple);
+  display: inline-block;
+}
+
+input:focus+.line, textarea:focus+.line {
+  width: 100%;
+  transition: width .3s ease-in-out;
+}
+
+input.form-control {
+  margin: -.3rem 0;
+}
+
+textarea.form-control {
+  margin: -.3rem 0;
+}
+
+.error-message {
+  color: var(--primary-white);
+  background: red;
+  text-align: left;
+}
+
+.success-message {
+  font-weight: 700;
+  color: var(--primary-green);
+}
+
+
+
+@media(max-width: 768px) {
+  .contactMe .container {
+    padding: 0 1rem;
+  }
+  .contactMe p {
+    padding: 0 .5rem;
   }
 }
