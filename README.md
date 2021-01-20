@@ -1,3 +1,26 @@
+This is my portfolio made with react
+
+# here is a link to a live demo 
+https://drive.google.com/file/d/1VkQ-ikyTwgJfN5U2V_DvpC0vkQBiBOzc/view
+
+I used several new npm's such as, react-scroll, react-hook-form, emailjs-com, etc.
+
+The contact form is fully hooked up with emailjs-com and is connected to my main email, has validation, form fields must be filled out or error messages will be shown, form clears and shows a success message if filled out correctly. projects are displayed with react-popupbox.
+
+react-scroll is used to navigate the page, links for page navigation are in navbar and footer.
+
+email, phone number, mailing address all located in footer.
+
+when i deploy this i will be allowing it to be shared with the facebook share button located in the footer, as well ass linkedin sharing for future employers etc.
+
+portfolio component has project 1 and 2 fully hooked up with links, will add project 3 when completed.
+
+Linked to my github on the header and footer, linked to my linkedin on the header. 
+
+Also, I used react particles and typed-text for header effects.
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

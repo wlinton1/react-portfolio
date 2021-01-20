@@ -41,7 +41,7 @@ nav ul li {
   border-bottom: .19rem solid var(--primary-dark);
 }
 
-.navbar-nav>li>a.active, .navbar-nav>li>a.active:focus {
+.navbar-nav>li>a.active, .navbar-nav>li>a:focus {
   border-bottom: .19rem solid var(--primary-purple);
 }
 
@@ -54,7 +54,7 @@ nav ul li {
   background: url(portfolio.jpg);
   background-size: cover;
   background-position: center;
-  height: 90vh;
+  height: 100vh;
 }
 
 .main-info {
@@ -152,6 +152,7 @@ nav ul li {
 .portfolio-image-box {
   position: relative;
   margin: 1rem;
+  cursor: pointer;
 }
 
 .overflow {
@@ -271,6 +272,27 @@ textarea.form-control {
 .success-message {
   font-weight: 700;
   color: var(--primary-green);
+}
+
+.footer {
+  background: var(--primary-black);
+  color: var(--primary-grey);
+  padding: 3rem;
+}
+
+.footer a {
+  text-decoration: none;
+  color: var(--primary-grey)
+}
+
+.footer a:hover {
+  text-decoration: none;
+  color: var(--primary-purple);
+  cursor: pointer;
+}
+
+.footer p {
+  margin-bottom: 0;
 }
 
 

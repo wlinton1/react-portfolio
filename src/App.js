@@ -3,6 +3,7 @@ import Header from './components/Header'
 import AboutMe from './components/AboutMe'
 import Portfolio from './components/Portfolio'
 import ContactMe from './components/ContactMe'
+import Footer from './components/Footer'
 import './App.css'
 import "bootstrap/dist/css/bootstrap.min.css"
 import Particles from 'react-particles-js'
@@ -35,6 +36,7 @@ function App() {
       <AboutMe />
       <Portfolio />
       <ContactMe />
+      <Footer />
 
     </>
   );
